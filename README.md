@@ -41,6 +41,42 @@ WORLD_WIDTH = 800
 WORLD_HEIGHT = 800
 ```
 
+```python
+#chemistry.py
+TARGET_SHELL = 5
+VALENCE_ELECTRONS = [1, 2, 3, 4, 5] 
+
+ELECTRONEG = [1.0, 1.6, 2.1, 2.6, 3.1]
+
+TYPE_PREF = {
+    0: {"max_bonds": 1, "mode": "terminal",   "prefer_multiple": False, "prefer_branch": False},
+    1: {"max_bonds": 2, "mode": "linear",     "prefer_multiple": False, "prefer_branch": False},
+    2: {"max_bonds": 3, "mode": "branched",   "prefer_multiple": False, "prefer_branch": True},
+    3: {"max_bonds": 4, "mode": "multi",      "prefer_multiple": True,  "prefer_branch": True},
+    4: {"max_bonds": 1, "mode": "inertish",   "prefer_multiple": False, "prefer_branch": False},
+}
+
+MAX_BONDS_BASE = 4
+
+T_GEOM_MAX = 0.9
+T_IONIC_MIN = 1.6
+
+CAPTURE_RADIUS = 34.0
+BOND_FORM_RADIUS = 26.0
+
+REL_V2_BASE = 6.0
+REL_V2_STABIL_BONUS = 8.0
+
+P_BOND_BASE = 0.28             
+P_BOND_DEFICIT_GAIN = 0.16
+P_BOND_LOW_T_BOOST = 0.20
+P_BOND_HIGH_T_BOOST = 0.10
+
+P_DISSOC_BASE = 0.005
+P_DISSOC_HIGH_T = 0.05
+```
+<br><br>
+
 ## How to Run
 
 1. Fork or clone this repository.
