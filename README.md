@@ -1,6 +1,6 @@
 # ATOMIC DYNAMICS SIMULATOR
 
-**General explanation**
+## General explanation
 
 This project simulates atomic interactions based on simplified physical and chemical principles. The simulation models the motion of atoms, their interactions, and the formation of chemical bonds under different energetic and environmental conditions.
 
@@ -17,13 +17,13 @@ In addition, covalent interactions may result in single, double, or triple bonds
 The physical behavior of atoms and the chemical rules governing bonding are implemented separately in the project, to keep the system modular and easy to modify. Key parameters and rules can also be customized in their corresponding files: `physics.py`, `chemics.py`. This structure allows users to experiment with different modeled scenarios.
 
 
-**How to Run**
+## How to Run:
 
 1. Fork or clone this repository.
 2. Open a terminal in the project directory.
 3. Run the simulation with `main.py`
 
 
-**Code demonstration**
+## Code demonstration:
 
 https://www.youtube.com/watch?v=AUlwlbtnwDM
